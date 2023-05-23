@@ -1,23 +1,11 @@
-import java. applet.*;
- import java.awt.*; 
-public class ap extends Applet 
+import java.awt.*;
+import java.applet.*;
+public class ap extends Applet
 {
-int h, w;
- public void init() 
+ public void paint(Graphics g)
 {
-h = getSize().height;
-w = getSize().width; 
-setName ("MyApplet"); 
+ g.drawOval(20,20,200,120);
+ g.setColor(Color.green);
+ g.fillOval(70,30,100,100);
 }
- public void paint(Graphics gx) 
-{ 
-gx.drawRoundRect(11, 29, 130, 119, 3, 2); 
 }
- }
-
-
-
-
-
-
- //To Run Java file "javac filename.java"
