@@ -14,3 +14,10 @@ setName ("MyApplet");
 gx.drawRoundRect(11, 29, 130, 119, 3, 2); 
 }
  }
+
+
+
+
+
+
+ //To Run Java file "javac filename.java"
