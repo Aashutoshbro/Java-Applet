@@ -7,3 +7,93 @@ Q4. WAP to show the demonstration of throws with suitable example.
 Q5. WAP to show the demonstration of user defined/custom exception handling with suitable example.
 
 
+public class TryCatch {  
+  
+    public static void main(String[] args) {  
+        try  
+        {  
+        int data=50/0;   
+        }  
+        catch(ArithmeticException e)  
+        {  
+            System.out.println(e);  
+        }  
+        System.out.println("rest of the code");  
+    }  
+      
+} 
+
+
+
+
+
+public class FinallyBlock{    
+    public static void main(String args[]){   
+
+    try {    
+
+      System.out.println("Inside try block");  
+
+      //below code throws divide by zero exception  
+     int data=25/0;    
+     System.out.println(data);    
+    }   
+
+    //handles the Arithmetic Exception / Divide by zero exception  
+    catch(ArithmeticException e){  
+      System.out.println("Exception handled");  
+      System.out.println(e);  
+    }   
+
+    //executes regardless of exception occured or not   
+    finally {  
+      System.out.println("finally block is always executed");  
+    }    
+
+    System.out.println("rest of the code...");    
+    }    
+  }  
+
+
+  public class Throws {   
+    //function to check if person is eligible to vote or not   
+    public static void validate(int age) {  
+        if(age<18) {  
+            //throw Arithmetic exception if not eligible to vote  
+            throw new ArithmeticException("Person is not eligible to vote");    
+        }  
+        else {  
+            System.out.println("Person is eligible to vote!!");  
+        }  
+    }  
+    //main method  
+    public static void main(String args[]){  
+        //calling the function  
+        validate(13);  
+        System.out.println("rest of the code...");    
+  }    
+}   
+
+
+
+import java.io.*;  
+class M{  
+ void method()throws IOException{  
+  throw new IOException("device error");  
+ }  
+}  
+public class Testthrows2{  
+   public static void main(String args[]){  
+    try{  
+     M m=new M();  
+     m.method();  
+    }catch(Exception e){System.out.println("exception handled");}     
+  
+    System.out.println("normal flow...");  
+  }  
+}  
+
+
+
+
+
