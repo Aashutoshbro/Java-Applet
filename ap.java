@@ -19,7 +19,7 @@ public class ap extends Applet implements ActionListener {
         add(stopButton);
         try {
             // Replace the URL with the path to your audio file
-            URL audioURL = new URL(getCodeBase(), "bhajan.mp3");
+            URL audioURL = new URL(getCodeBase(), "bhajan.wav");
             audioClip = getAudioClip(audioURL);
         } catch (MalformedURLException e) {
             e.printStackTrace();
