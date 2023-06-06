@@ -9,12 +9,8 @@ For this you only need to download chrome extension named as "CheerpJ Applet Run
 
 Link:https://chrome.google.com/webstore/detail/cheerpj-applet-runner/bbmolahhldcbngedljfadjlognfaaein
 
+result for play and stop music player:
 
-![demo](https://github.com/Aashutoshbro/Java-Applet/assets/55585284/c0991cae-1e9e-4b76-87f9-d09d2b4ce4b6)
-
-
-For High quality demo :
-
-https://github.com/Aashutoshbro/Java-Applet/assets/55585284/37c1455a-e84f-45ed-9aff-8ce2012bc76d
+https://github.com/Aashutoshbro/Java-Applet/assets/55585284/e1d8cb0f-56ee-4727-b232-9c255c48e750
 
 
