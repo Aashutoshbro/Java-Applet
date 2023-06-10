@@ -1,35 +1,25 @@
 import java.applet.Applet;
-import java.awt.Button;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.applet.AudioClip;
-public class ap extends Applet implements ActionListener {
-    private Button playButton;
-    private Button stopButton;
-    private AudioClip audioClip;
+import java.awt.Graphics;
 
+public class ap extends Applet {
     public void init() {
-        playButton = new Button("Play");
-        playButton.addActionListener(this);
-        add(playButton);
-        stopButton = new Button("Stop");
-        stopButton.addActionListener(this);
-        add(stopButton);
-        try {
-            // Replace the URL with the path to your audio file
-            URL audioURL = new URL(getCodeBase(), "bhajan.wav");
-            audioClip = getAudioClip(audioURL);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
+        System.out.println("Initializing the applet...");
     }
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == playButton) {
-            audioClip.play();
-        } else if (e.getSource() == stopButton) {
-            audioClip.stop();
-        }
+
+    public void start() {
+        System.out.println("Starting the applet...");
+    }
+
+    public void paint(Graphics g) {
+        System.out.println("Painting the applet...");
+        g.drawString("Applet Life Cycle", 50, 50);
+    }
+
+    public void stop() {
+        System.out.println("Stopping the applet...");
+    }
+
+    public void destroy() {
+        System.out.println("Destroying the applet...");
     }
 }
